@@ -39,7 +39,7 @@ This project allows you to draw pictures on the NumWorks calculator using the Tu
 Run the following script to generate the color mapping (`color_letters.txt`) from your image:
 
 ```bash
-python color_mapping.py
+python exportstring.py
 ```
 
 This script will create a mapping of colors to letters and save them in `color_letters.txt`.
