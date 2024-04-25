@@ -46,8 +46,10 @@ This script will create a mapping of colors to letters and save them in `color_l
 
 ### 3. Draw on NumWorks Calculator
 
-1. Transfer `color_letters.txt` to your NumWorks calculator.
-2. Open the `turtle_drawing.py` script on your calculator.
+1. copy the contents of `color_letters.txt` and the colors in the table to `code_numworks.py` on your calculator.
+2. export this to the calculator using the Numworks online tool.
+
+1. If you want to draw this on the pc instead use the `tortue.py` file and run it with python. (make sure to copy the colors into the table in the file python first)
 
 ### 4. Run the Turtle Drawing
 
