@@ -1,4 +1,4 @@
-# Projet Turtle Art du Calculateur NumWorks
+# Projet Dessin Turtle pour Calculatrice NumWorks
 
 Ce projet vous permet de dessiner des images sur la calculatrice NumWorks en utilisant la bibliothèque graphique Turtle. Le projet consiste à convertir une image en une séquence de commandes Turtle basées sur des correspondances de couleurs.
 
