@@ -1,9 +1,25 @@
-# NumWorks Calculator Turtle Art Project
+# NumWorks Calculator Turtle Drawing Project
+
+[![License](https://img.shields.io/github/license/elektricM/Numworks_turtle_draw)](
 
 - [English](README.md)
 - [Français](README.fr.md)
 
 This project allows you to draw pictures on the NumWorks calculator using the Turtle graphics library. The project involves converting an image into a sequence of turtle commands based on color mappings.
+
+## Usage
+
+### Option 1: Using the GUI Executable
+
+1. **Download the GUI Executable**:
+
+   Download the latest release from the [releases page](https://github.com/elektricM/Numworks_turtle_draw/releases).
+
+2. **Run the Executable**:
+
+   Run the executable and follow the instructions in the GUI to select your image and generate the Python script for the NumWorks calculator.
+
+### Option 2: Running Manually with Python
 
 ## Requirements
 
@@ -11,14 +27,16 @@ This project allows you to draw pictures on the NumWorks calculator using the Tu
 - NumWorks Calculator
 - PIL (Pillow) library
 - Turtle graphics library
+- Tkinter (for the GUI version)
+- pyperclip (for clipboard functionality)
 
 ## Setup
 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/numworks-turtle-art.git
-   cd numworks-turtle-art
+   git clone https://github.com/elektricM/Numworks_turtle_draw.git
+   cd Numworks-turtle-draw
    ```
 
 2. **Install Dependencies:**
@@ -26,16 +44,23 @@ This project allows you to draw pictures on the NumWorks calculator using the Tu
    Make sure you have Python 3.x installed. Then, install the required libraries using pip:
 
    ```bash
-   pip install Pillow
+   pip install pillow
+   pip install pyperclip
+   pip install turtle
+   pip install tk
    ```
-
-   The `turtle` library is usually included with Python by default.
 
 ## Usage
 
+## Option 1: Using the GUI Script
+
+- Use the `automatic_gui.py` script to generate the color mapping and Python script for the NumWorks calculator using the GUI.
+
+## Option 2: Running Manually with Python
+
 ### 1. Prepare Your Image
 
-- Place your desired image (e.g., `phryge.png`) in the project directory.
+- Place your desired image (e.g., `example.png`) in the project directory.
 
 ### 2. Generate Color Letters
 
@@ -60,6 +85,6 @@ On your NumWorks calculator, execute the `turtle_drawing.py` script. This script
 
 ## Additional Notes
 
-- Ensure the image you use (`phryge.png` in the example) is appropriately sized for the NumWorks calculator screen dimensions (`320x240`).
+- Ensure the image you use (`example.png` in the example) is appropriately sized for the NumWorks calculator screen dimensions (`320x240`) and doesn't have too many colors.
 
 ---
