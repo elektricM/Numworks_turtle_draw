@@ -1,7 +1,5 @@
 # NumWorks Calculator Turtle Drawing Project
 
-[![License](https://img.shields.io/github/license/elektricM/Numworks_turtle_draw)](
-
 - [English](README.md)
 - [Français](README.fr.md)
 

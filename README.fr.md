@@ -1,6 +1,22 @@
-# Projet Dessin Turtle pour Calculatrice NumWorks
+# Dessin Turtle pour la Calculatrice NumWorks
+- [English](README.md)
+- [Français](README.fr.md)
 
 Ce projet vous permet de dessiner des images sur la calculatrice NumWorks en utilisant la bibliothèque graphique Turtle. Le projet consiste à convertir une image en une séquence de commandes Turtle basées sur des correspondances de couleurs.
+
+## Utilisation
+
+### Option 1 : Utiliser l'Exécutable GUI
+
+1. **Télécharger l'Exécutable GUI** :
+
+   Téléchargez la dernière version depuis la [page des releases](https://github.com/elektricM/Numworks_turtle_draw/releases).
+
+2. **Exécuter l'Exécutable** :
+
+   Exécutez l'exécutable et suivez les instructions dans l'interface graphique pour sélectionner votre image et générer le script Python pour la calculatrice NumWorks.
+
+### Option 2 : Exécution Manuelle avec Python
 
 ## Prérequis
 
@@ -8,31 +24,40 @@ Ce projet vous permet de dessiner des images sur la calculatrice NumWorks en uti
 - Calculatrice NumWorks
 - Bibliothèque PIL (Pillow)
 - Bibliothèque graphique Turtle
+- Tkinter (pour la version GUI)
+- pyperclip (pour la fonctionnalité du presse-papiers)
 
-## Configuration
+## Installation
 
-1. **Cloner le Dépôt :**
-
-   ```bash
-   git clone https://github.com/votre-nom-utilisateur/numworks-turtle-art.git
-   cd numworks-turtle-art
-   ```
-
-2. **Installer les Dépendances :**
-
-   Assurez-vous d'avoir Python 3.x installé. Ensuite, installez les bibliothèques requises avec pip :
+1. **Cloner le Dépôt** :
 
    ```bash
-   pip install Pillow
+   git clone https://github.com/elektricM/Numworks_turtle_draw.git
+   cd Numworks-turtle-draw
    ```
 
-   La bibliothèque `turtle` est généralement incluse avec Python par défaut.
+2. **Installer les Dépendances** :
+
+   Assurez-vous d'avoir Python 3.x installé. Ensuite, installez les bibliothèques requises en utilisant pip :
+
+   ```bash
+   pip install pillow
+   pip install pyperclip
+   pip install turtle
+   pip install tk
+   ```
 
 ## Utilisation
 
-### 1. Préparez Votre Image
+### Option 1 : Utiliser le Script GUI
 
-- Placez votre image désirée (par exemple `phryge.png`) dans le répertoire du projet.
+- Utilisez le script `automatic_gui.py` pour générer la correspondance des couleurs et le script Python pour la calculatrice NumWorks en utilisant l'interface graphique.
+
+### Option 2 : Exécution Manuelle avec Python
+
+### 1. Préparer Votre Image
+
+- Placez l'image désirée (par exemple, `example.png`) dans le répertoire du projet.
 
 ### 2. Générer les Lettres de Couleur
 
@@ -42,19 +67,21 @@ Exécutez le script suivant pour générer la correspondance des couleurs (`colo
 python exportstring.py
 ```
 
-Ce script va créer une correspondance des couleurs avec des lettres et les sauvegarder dans `color_letters.txt`.
+Ce script créera une correspondance des couleurs en lettres et les enregistrera dans `color_letters.txt`.
 
-### 3. Dessinez sur la Calculatrice NumWorks
+### 3. Dessiner sur la Calculatrice NumWorks
 
-1. Copiez le contenu de `color_letters.txt` et les couleurs dans le tableau dans `code_numworks.py` sur votre calculatrice.
-2. Exportez cela sur la calculatrice à l'aide de l'outil en ligne Numworks.
+1. Copiez le contenu de `color_letters.txt` et les couleurs dans le tableau vers `code_numworks.py` sur votre calculatrice.
+2. Exportez cela sur la calculatrice en utilisant l'outil en ligne de NumWorks.
 
-3. Si vous voulez dessiner cela sur l'ordinateur, utilisez le fichier `tortue.py` et exécutez-le avec Python. (assurez-vous de copier les couleurs dans le tableau du fichier Python d'abord)
+3. Si vous souhaitez dessiner cela sur le PC, utilisez le fichier `tortue.py` et exécutez-le avec Python. (Assurez-vous de copier les couleurs dans le tableau dans le fichier Python d'abord)
 
-### 4. Exécutez le Dessin Turtle
+### 4. Exécuter le Dessin Turtle
 
-Sur votre calculatrice NumWorks, exécutez le script `turtle_drawing.py`. Ce script va interpréter les lettres de couleur à partir de `color_letters.txt` et dessiner l'image correspondante en utilisant la bibliothèque graphique Turtle.
+Sur votre calculatrice NumWorks, exécutez le script `turtle_drawing.py`. Ce script interprétera les lettres de couleur de `color_letters.txt` et dessinera l'image correspondante en utilisant les graphiques Turtle.
 
-## Remarques Additionnelles
+## Notes Additionnelles
 
-- Assurez-vous que l'image que vous utilisez (`phryge.png` dans l'exemple) est dimensionnée de manière appropriée pour les dimensions de l'écran de la calculatrice NumWorks (`320x240`).
+- Assurez-vous que l'image que vous utilisez (`example.png` dans l'exemple) est de la taille appropriée pour les dimensions de l'écran de la calculatrice NumWorks (`320x240`) et ne contient pas trop de couleurs.
+
+---
